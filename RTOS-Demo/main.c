@@ -280,7 +280,7 @@ volatile unsigned long ulButtonPressCounts = 0UL;
 
 int main(void)
 {
-	trace_puts("FreeRTOS on STM32F4 Discovery!");
+    //trace_puts("FreeRTOS on STM32F4 Discovery!");
 
 	/* Configure the hardware ready to run the test. */
 	prvSetupHardware();
@@ -423,7 +423,7 @@ static void prvButtonTestTask( void *pvParameters )
 	{
 		xSemaphoreTake( xTestSemaphore, portMAX_DELAY );
 		ulButtonPressCounts++;
-		trace_puts("btn ");
+		//trace_puts("btn ");
 	}
 
 	UNUSED(pvParameters);
